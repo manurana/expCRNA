@@ -1,16 +1,20 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+// import { StyleSheet, Text, View } from "react-native";
+import { ApplicationProvider, Layout, Text } from "@ui-kitten/components";
+import { mapping, light as lightTheme } from "@eva-design/eva";
 import BracketForm from "./components/BracketForm";
 
-export default function App() {
-  return <BracketForm />;
-}
+const HomeScreen = () => (
+  <Layout style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <BracketForm />
+    {/* <Text category="h1">HOME</Text> */}
+  </Layout>
+);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  }
-});
+const App = () => (
+  <ApplicationProvider mapping={mapping} theme={lightTheme}>
+    <HomeScreen />
+  </ApplicationProvider>
+);
+
+export default App;

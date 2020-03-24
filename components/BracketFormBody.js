@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { View, Button } from "react-native";
+import { View, Button, SafeAreaView } from "react-native";
 import { useFormikContext } from "formik";
 import FormTextInput from "./FormTextInput";
 import ArrayInput from "./ArrayInput";
@@ -10,7 +10,7 @@ const BracketFormBody = () => {
     values,
     isValid,
     isSubmitting,
-    validateForm
+    validateForm,
   } = useFormikContext();
 
   // useEffect(() => {
@@ -30,7 +30,7 @@ const BracketFormBody = () => {
   };
 
   return (
-    <View style={{ flex: 1, alignItems: "center", paddingTop: 20 }}>
+    <SafeAreaView style={{ flex: 1, alignItems: "center", paddingTop: 20 }}>
       <View style={{ width: 300 }}>
         <FormTextInput fieldName="name" placeholder="Name" />
         <FormTextInput fieldName="description" placeholder="Description" />
@@ -42,7 +42,7 @@ const BracketFormBody = () => {
         />
       </View>
       <Button onPress={submitForm} disabled={submitDisabled} title="Submit" />
-    </View>
+    </SafeAreaView>
   );
 };
 
