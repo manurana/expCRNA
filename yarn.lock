@@ -439,7 +439,7 @@
     "@babel/helper-builder-binary-assignment-operator-visitor" "^7.8.3"
     "@babel/helper-plugin-utils" "^7.8.3"
 
-"@babel/plugin-transform-flow-strip-types@^7.0.0":
+"@babel/plugin-transform-flow-strip-types@^7.0.0", "@babel/plugin-transform-flow-strip-types@^7.9.0":
   version "7.9.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-flow-strip-types/-/plugin-transform-flow-strip-types-7.9.0.tgz#8a3538aa40434e000b8f44a3c5c9ac7229bd2392"
   integrity sha512-7Qfg0lKQhEHs93FChxVLAvhBshOPQDtJUTVHr/ZwQNRccCm4O9D79r9tVSoV8iNwjP1YgfD+e/fgHcPkN1qEQg==
@@ -604,6 +604,14 @@
   dependencies:
     "@babel/helper-create-regexp-features-plugin" "^7.8.3"
     "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/preset-flow@^7.9.0":
+  version "7.9.0"
+  resolved "https://registry.yarnpkg.com/@babel/preset-flow/-/preset-flow-7.9.0.tgz#fee847c3e090b0b2d9227c1949e4da1d1379280d"
+  integrity sha512-88uSmlshIrlmPkNkEcx3UpSZ6b8n0UGBq0/0ZMZCF/uxAW0XIAUuDHBhIOAh0pvweafH4RxOwi/H3rWhtqOYPA==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/plugin-transform-flow-strip-types" "^7.9.0"
 
 "@babel/register@^7.0.0":
   version "7.9.0"
@@ -2747,6 +2755,11 @@ flatted@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.1.tgz#69e57caa8f0eacbc281d2e2cb458d46fdb449e08"
   integrity sha512-a1hQMktqW9Nmqr5aktAux3JMNqaucxGcjtjWnZLHX7yyPCmlSV3M54nGYbqT8K+0GhF3NBgmJCc3ma+WOgX8Jg==
+
+flow-bin@^0.105.0:
+  version "0.105.2"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.105.2.tgz#9d03d5ae3e1d011e311f309cb8786b3b3695fec2"
+  integrity sha512-VCHt0SCjFPviv/Ze/W7AgkcE0uH4TocypSFA8wR3ZH1P7BSjny4l3uhHyOjzU3Qo1i0jO4NyaU6q3Y5IaQ6xng==
 
 fn-name@~3.0.0:
   version "3.0.0"
